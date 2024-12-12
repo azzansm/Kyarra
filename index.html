@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyarra Boarding House</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- font awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- custom javascript file link -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!-- swiper link -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    
+<!-- header section starts  -->
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#home" class="logo">K Y A R R A</a>    
+
+    <nav class="navbar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#room" class="nav-link">Rooms</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <!-- <a href="#" class="btn">Book Now</a> -->
+    </nav>
+
+</header>
+
+<script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('toggler').checked = false; // Uncheck the toggler to close the menu
+        });
+    });
+    </script>
+<!-- header section ends  -->
+
+<!-- home section starts -->
+<section class="home" id="home">
+    
+    <div class="home-content">
+        <h1>It's a Big World Out There, Go explore</h1>
+        <h5>Embrace life's vastness, venture forth, and discover the wonders waiting beyond. 
+        The world beckons; seize its grand offerings now!</h5>
+        <a href="#" class="btn">Book Now</a>
+    </div>
+
+</section>
+<!-- home section ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+
+    <div class="about-container">
+        <img src="/img/about.jpg" alt="Kyarra Home" class="about-image">
+        <div class="about-content">
+            <h2>About</h2>
+            <h3>KYARRA BOARDING HOUSE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Amet hac suspendisse nam fermentum semper nunc sem. 
+            Felis molestie bibendum amet purus et ipsum in tincidunt. Vulputate at suscipit laoreet mi semper luctus enim orci.
+            Nibh nam donec fames nullam urna proin. Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <a href="#room" class="btn-about">Room Types<span class="arrow-icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+        </div>
+    </div>
+
+</section>
+<!-- about section ends -->
+
+<!-- facilities section starts -->
+<section class="facilities" id="facilities">
+    <h2 class="facilities-title">Boarding House Facilities</h2>
+    <h4 class="facilities-subtitle">Built for your comfort and productivity</h4>
+    <div class="icons-container">
+        <div class="icons">
+            <img src="/img/fac1.svg" alt="">
+            <div class="info">
+                <h4>High Speed WIFI</h4>
+                <span>Lorem ipsum dolor sit amet at solum etiam idque numquam id mei.</span>
+            </div>
+        </div>
+        <div class="icons2">
+            <img src="/img/fac2.svg" alt="">
+            <div class="info">
+                <h4>High Speed WIFI</h4>
+                <span>Lorem ipsum dolor sit amet at solum etiam idque numquam id mei.</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="/img/fac1.svg" alt="">
+            <div class="info">
+                <h4>High Speed WIFI</h4>
+                <span>Lorem ipsum dolor sit amet at solum etiam idque numquam id mei.</span>
+            </div>
+        </div>
+        <div class="icons2">
+            <img src="/img/fac2.svg" alt="">
+            <div class="info">
+                <h4>High Speed WIFI</h4>
+                <span>Lorem ipsum dolor sit amet at solum etiam idque numquam id mei.</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="/img/fac1.svg" alt="">
+            <div class="info">
+                <h4>High Speed WIFI</h4>
+                <span>Lorem ipsum dolor sit amet at solum etiam idque numquam id mei.</span>
+            </div>
+        </div>
+        <div class="icons2">
+            <img src="/img/fac2.svg" alt="">
+            <div class="info">
+                <h4>High Speed WIFI</h4>
+                <span>Lorem ipsum dolor sit amet at solum etiam idque numquam id mei.</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- facilities section ends -->
+
+<!-- room section starts -->
+<section class="room" id="room">
+    <h2 class="room-title">Room Types</h2>
+    <h4 class="room-subtitle">Discover the perfect space for you!</h4>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Room Slide 1 -->
+            <div class="swiper-slide">
+                <div class="room-content">
+                    <div class="room-image">
+                        <img src="img/room1.png" alt="Hotel Room 1">
+                        <div class="price-tag">
+                            <span class="price-label">Start from:</span>
+                            <span class="price-value">$150/month</span>
+                        </div>                    </div>
+                    <div class="room-description">
+                        <h2>Luxury Suite</h2>
+                        <p>This room features a king-sized bed, ocean views, a private balcony, and modern amenities for a luxurious stay.</p>
+                        <!-- <a href="#" class="btn-room">Book Now</a> -->
+                        <div class="facilities-container">
+                            <div class="facility">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <span>1 King Bed</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-tv" aria-hidden="true"></i>
+                                <span>Flat Screen TV</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <span>Coffee Maker</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <span>Free Wi-Fi</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-shower" aria-hidden="true"></i>
+                                <span>En-suite Bathroom</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-umbrella" aria-hidden="true"></i>
+                                <span>Pool Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Room Slide 2 -->
+            <div class="swiper-slide">
+                <div class="room-content">
+                    <div class="room-image">
+                        <img src="img/room2.png" alt="Hotel Room 2">
+                        <div class="price-tag">
+                            <span class="price-label">Start from:</span>
+                            <span class="price-value">$950/month</span>
+                        </div>
+                    </div>
+                    <div class="room-description">
+                        <h2>Executive Room</h2>
+                        <p>Experience luxury and comfort with this spacious executive room, perfect for business or leisure stays.</p>
+                        <div class="facilities-container">
+                            <div class="facility">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <span>1 King Bed</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-tv" aria-hidden="true"></i>
+                                <span>Flat Screen TV</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <span>Coffee Maker</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <span>Free Wi-Fi</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-shower" aria-hidden="true"></i>
+                                <span>En-suite Bathroom</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-umbrella" aria-hidden="true"></i>
+                                <span>Pool Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Room Slide 3 -->
+            <div class="swiper-slide">
+                <div class="room-content">
+                    <div class="room-image">
+                        <img src="img/room3.png" alt="Hotel Room 3">
+                        <div class="price-tag">
+                            <span class="price-label">Start from:</span>
+                            <span class="price-value">$50/month</span>
+                        </div>                    </div>
+                    <div class="room-description">
+                        <h2>Luxury Suite</h2>
+                        <p>This room features a king-sized bed, ocean views, a private balcony, and modern amenities for a luxurious stay.</p>
+                        <div class="facilities-container">
+                            <div class="facility">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <span>1 King Bed</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-tv" aria-hidden="true"></i>
+                                <span>Flat Screen TV</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <span>Coffee Maker</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <span>Free Wi-Fi</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-shower" aria-hidden="true"></i>
+                                <span>En-suite Bathroom</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-umbrella" aria-hidden="true"></i>
+                                <span>Pool Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Room Slide 4 -->
+            <div class="swiper-slide">
+                <div class="room-content">
+                    <div class="room-image">
+                        <img src="img/room4.png" alt="Hotel Room 4">
+                        <div class="price-tag">
+                            <span class="price-label">Start from:</span>
+                            <span class="price-value">$100/month</span>
+                        </div>                    </div>
+                    <div class="room-description">
+                        <h2>Luxury Suite</h2>
+                        <p>This room features a king-sized bed, ocean views, a private balcony, and modern amenities for a luxurious stay.</p>
+                        <div class="facilities-container">
+                            <div class="facility">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <span>1 King Bed</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-tv" aria-hidden="true"></i>
+                                <span>Flat Screen TV</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <span>Coffee Maker</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <span>Free Wi-Fi</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-shower" aria-hidden="true"></i>
+                                <span>En-suite Bathroom</span>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-umbrella" aria-hidden="true"></i>
+                                <span>Pool Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- javascript for room swiper  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        effect: 'slide',
+        // speed: 800,
+        spaceBetween: 30,
+        grabCursor: true,
+    });
+</script>
+<!-- room section ends -->
+
+<!-- gallery section starts -->
+<section class="gallery" id="gallery">
+    <h2 class="gallery-title">Gallery</h2>
+    <h4 class="gallery-subtitle">A glimpse into cozy living</h4>
+    <div class="img-gallery">
+        <div class="box row-2" style="background-image: url('./img/gallery1.jpg');" onclick="showImage('./img/gallery1.jpg',  'Caption for Image 1')">Pond</div>
+        <div class="box col-2" style="background-image: url('./img/gallery2.jpg');" onclick="showImage('./img/gallery2.jpg',  'Caption for Image 2')">Fitness Center</div>
+        <div class="box" style="background-image: url('./img/gallery3.jpg');" onclick="showImage('./img/gallery3.jpg',  'Caption for Image 3')">Mountain</div>
+        <div class="box row-2" style="background-image: url('./img/gallery4.jpg');" onclick="showImage('./img/gallery4.jpg',  'Caption for Image 4')">Scenery</div>
+        <div class="box col-2" style="background-image: url('./img/gallery5.jpg');" onclick="showImage('./img/gallery5.jpg',  'Caption for Image 5')">Environment</div>
+        <div class="box" style="background-image: url('./img/gallery6.jpg');" onclick="showImage('./img/gallery6.jpg',  'Caption for Image 6')">Gazebo</div>
+        <div class="box col-2" style="background-image: url('./img/gallery7.jpg');" onclick="showImage('./img/gallery7.jpg',  'Caption for Image 7')">Forest</div>
+    </div>
+    <div id="image-modal" class="modal" style="display: none;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="full-image">
+        <div class="caption" id="image-caption"></div>
+        <!-- <button class="prev" onclick="changeImage(-1)">&#10094; Previous</button>
+        <button class="next" onclick="changeImage(1)">Next &#10095;</button> -->
+    </div>
+</section>
+<!-- gallery section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+    <div class="contact-wrap">
+        <div class="contact-in">
+            <h1>Contact Info</h1>
+            <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+            <p>123-456-789</p>
+            <!-- nanti connect ke email -->
+            <h2><i class="fa fa-envelope" aria-hidden="true"></i>Email</h2>
+            <p>booking@test.com</p> 
+            <h2><i class="fa fa-location-dot" aria-hidden="true"></i>Address</h2>
+            <p>Jl. Bendungan Jatiluhur, Jakarta</p>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <!-- <div class="contact-in">
+            <h1 class="title-form">Send a Message</h1>
+            <form action="mailto:kyarra@example.com" method="post" enctype="text/plain">
+                <input type="text" placeholder="Full Name" class="contact-in-input">
+                <input type="text" placeholder="Email" class="contact-in-input">
+                <input type="text" placeholder="Subject" class="contact-in-input">
+                <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+                <input type="submit" placeholder="Submit" class="contact-in-btn">
+            </form>
+        </div> -->
+        <div class="contact-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31730.730110776!2d106.78426086902618!3d-6.2186495160819515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d30079f01%3A0x2e74f2341fff266d!2sGelora%20Bung%20Karno%20Main%20Stadium!5e0!3m2!1sen!2sid!4v1727552218465!5m2!1sen!2sid" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- wa floating starts -->
+ <a class="wa-btn" href="https://wa.me/6281228712510?text=Hello%20I%20want%20to%20book%20a%20room"><i class="fa-brands fa-whatsapp"></i><span>Book Now</span></a>
+<!-- wa floating ends -->
+
+</body>
+</html>
